@@ -1,0 +1,51 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+
+$base-font-family: 'Nunito', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$base-font-size:   17px;
+$base-font-weight: 400;
+$second-font-family: Merriweather, Georgia, serif;
+$small-font-size:  $base-font-size * 0.825;
+$base-line-height: 1.75;
+
+$spacing-unit:     30px;
+
+$menu-links-color: #153643;
+$text-color:       rgba(0,0,0,0.785);
+$background-color: #fdfdfd;
+$brand-color:      #41b7d8;
+
+$grey-color:       rgba(0, 0, 0, 0.35);
+$grey-color-light: lighten($grey-color, 80%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    750px;
+
+$on-palm:          585px;
+$on-laptop:        750px;
+
+
+
+// Use media queries like this:
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
