@@ -25,6 +25,7 @@
         color: $menu-links-color;
         font-size: 30px;
         font-weight: 600;
+        line-height: 3ch;
         text-transform: uppercase;
         padding: 0 11px;
 
@@ -192,6 +193,11 @@ background: transparent;
  */
 .page-content {
     padding: 140px 0;
+
+    @include media-query($on-palm) {
+      padding: 60px 0;
+   }
+
 }
 
 .page-heading {
@@ -602,13 +608,10 @@ blockquote {
   }
   
   #face {
+    width: 23vw;
     height: 23vw;
     margin: auto;
     border: 67px solid $yellow-color;
-  }
-
-  #face, #contact-details {
-    width: 23vw;
   }
 
   #tagline, #contact-details {
