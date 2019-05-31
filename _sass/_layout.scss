@@ -542,6 +542,10 @@ blockquote {
   grid-template-areas: 
     "left text right"
     "left bike right";
+
+  @include media-query($on-palm) {
+    grid-template-columns: 15% 70% 15%;
+  }
   
   position: absolute;
   top: 140px;
@@ -568,5 +572,10 @@ blockquote {
 
     /* Vertical center align */
     margin: auto;
+
+    @include media-query($on-palm) {
+      font-size: 9vw;
+      line-height: 12vw;
+    }
 }
 
