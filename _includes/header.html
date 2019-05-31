@@ -1,7 +1,7 @@
 {% assign currentPage = page.url | downcase | remove: '/' | remove: '.html' %}
 
 <header class="site-header">
-  <nav class="site-nav">
+  <nav class="menu">
       <a {% if currentPage == 'home' %} class="current" {% endif %} href="/">Hello</a>
       <a {% if currentPage == 'digital' %} class="current" {% endif %} href="/">Digital</a>
       <a {% if currentPage == 'product' %} class="current" {% endif %} href="/">Product</a>

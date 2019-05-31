@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -80,16 +80,12 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight + 200;
 }
-
-
 
 /**
  * Links
@@ -102,92 +98,6 @@ a {
         color: darken($text-color, 15%);
     }
 }
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: #3c3c3c;
-    background: #f9f9f9;
-    border-left: 6px solid $grey-color-light;
-    padding: $spacing-unit * 1.35;
-    font-weight: 400;
-    margin: 25px 0px 35px 0px;
-    font-style: italic;
-    text-align: justify;
-
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-blockquote:before {
-  color: #ccc;
-  content: "\201C";
-  font-size: 4em;
-  text-style: italic;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: block;
-  text-align: justify;
-}
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: $base-font-size - 3;
-    border: 1.3px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #fdf6e3;
-    font-family: 'Andale Mono', monospace;
-}
-
-code {
-    padding: 2px 5px;
-}
-
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-palm) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width: calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit;
-        padding-left: $spacing-unit;
-    }
-}
-
-
 
 /**
  * Clearfix
