@@ -83,6 +83,7 @@
 
   @include media-query($on-palm) {
     grid-template-columns: 15% 70% 15%;
+    min-height: 500px;
   }
   
   position: absolute;
@@ -90,6 +91,7 @@
   left: 0;
   width: 100vw;
   bottom: 0;
+  min-height: 750px;
   overflow: hidden;
 
   background-image: url("../images/bg.svg");
