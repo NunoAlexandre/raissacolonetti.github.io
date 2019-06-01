@@ -104,8 +104,8 @@
     grid-area: text;
     overflow: hidden;
 
-    font-size: 4vw;
-    line-height: 5.5vw;
+    font-size: calc(125% + 2.5vw);
+    line-height: 150%;
     font-weight: bold;
     text-align: center;
     color: $text-color;
@@ -114,8 +114,7 @@
     margin: auto;
 
     @include media-query($on-palm) {
-      font-size: 9vw;
-      line-height: 12vw;
+      font-size: calc(200% + 3vw);
     }
 }
 
