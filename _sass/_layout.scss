@@ -79,7 +79,7 @@
 
   @include media-query($on-palm) {
     grid-template-columns: 15% 70% 15%;
-    min-height: 600px;
+    min-height: 700px;
   }
   
   position: absolute;
@@ -104,7 +104,7 @@
     grid-area: text;
     overflow: hidden;
 
-    font-size: calc(125% + 2.5vw);
+    font-size: calc(125% + 1.85vw);
     line-height: 150%;
     font-weight: bold;
     text-align: center;
@@ -114,7 +114,8 @@
     margin: auto;
 
     @include media-query($on-palm) {
-      font-size: calc(200% + 3vw);
+      font-size: calc(200% + 2vw);
+      margin: 0;
     }
 }
 
