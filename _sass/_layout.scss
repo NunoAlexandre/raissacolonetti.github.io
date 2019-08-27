@@ -156,7 +156,8 @@
     width: 23vw;
     height: 23vw;
     margin: auto;
-    border: 67px solid $yellow-color;
+    outline: 3px solid $yellow-color;
+    outline-offset: -10px;
   }
 
   #tagline, #contact-details {
@@ -188,7 +189,8 @@
     min-width: 80vw;
 
     #face {
-      border: 40px solid #F4D40F;
+      outline: 2px solid $yellow-color;
+      outline-offset: -6px;
       height: 40vw;
       width: 40vw;
     }
