@@ -271,3 +271,50 @@
     }
   }
 }
+
+#project {
+  margin: 0 auto;
+  width: 65vw;
+  @include media-query($on-palm) {
+    width: 90vw;
+  }
+
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: $spacing-unit;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    font-weight: 600;
+  }
+
+  .subtitle, p, .credits{
+    font-size: 30px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $spacing-unit * 2;
+  }
+
+  img.full {
+    width: 100%;
+  }
+
+  img.centered {
+    width: 65%;
+    @include media-query($on-palm) {
+      width: 85%;
+    }
+  }
+
+  .credits {
+    margin-top: $spacing-unit * 2;
+    font-weight: bold;
+  }
+}
