@@ -235,8 +235,10 @@
 }
 
 #projects {
-  width: 70vw;
-  border: 1px solid #ddd; // delete
+  width: 80vw;
+  @include media-query($on-palm) {
+    width: 90vw;
+  }
   margin: 0 auto;
 
   display: flex;
@@ -244,13 +246,20 @@
   flex-wrap: wrap;
 
   .project {
-    width: 20vw;
+    margin: 0 auto;
+    width: 23vw;
+    @include media-query($on-palm) {
+      width: 80vw;
+    }
     margin-bottom: 60px;
     text-align: center;
 
     .thumbnail {
       width: 100%;
       height: 20vw;
+      @include media-query($on-palm) {
+        height: 50vh;
+      }
       background-size: cover;
     }
 
