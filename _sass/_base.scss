@@ -132,3 +132,9 @@ a {
 .round {
   border-radius: 50%;
 }
+
+.caption {
+    font-weight: bold;
+    font-size: 0.75em;
+    margin-bottom: $spacing-unit * 1.75;
+}
