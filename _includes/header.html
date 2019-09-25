@@ -3,7 +3,7 @@
 <header class="site-header">
   <nav class="menu">
       <a {% if currentPage == '' %} class="current" {% endif %} href="{{ site.url }}">Hello</a>
-      <a {% if currentPage == 'projects' %} class="current" {% endif %} href="{{ "/projects" | prepend: site.url  }}">Projects</a>
+      <a {% if currentPage == 'projects' or page.layout == 'project' %} class="current" {% endif %} href="{{ "/projects" | prepend: site.url  }}">Projects</a>
       <a {% if currentPage == 'about' %} class="current" {% endif %} href="{{ "/about" | prepend: site.url }}">About</a>
   </nav>
 </header>
