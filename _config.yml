@@ -18,7 +18,7 @@ email: raissacolonetti@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hello there, I am a product designer! You can say hello here.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nunoalexandre.com/raissacolonetti.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://raissacolonetti.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
